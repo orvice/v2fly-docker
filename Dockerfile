@@ -12,6 +12,6 @@ RUN apk update && apk add ca-certificates && \
 	mkdir -p /usr/bin/v2ray && \
 	tar xvfz /tmp/v2ray.tgz -C /usr/bin/v2ray
 
-#ENTRYPOINT ["/usr/bin/v2ray/v2ray"]
+ENTRYPOINT ["/usr/bin/v2ray/v2ray"]
 ENV PATH /usr/bin/v2ray:$PATH
 CMD ["run", "-c", "/etc/v2ray/config.json"]
