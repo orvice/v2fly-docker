@@ -14,4 +14,4 @@ RUN apk update && apk add ca-certificates && \
 
 #ENTRYPOINT ["/usr/bin/v2ray/v2ray"]
 ENV PATH /usr/bin/v2ray:$PATH
-CMD ["v2ray","run", "-c", "/etc/v2ray/config.json"]
+CMD ["run", "-c", "/etc/v2ray/config.json"]
